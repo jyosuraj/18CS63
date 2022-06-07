@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            color: green;
+            font-size: large;
+            text-align: center;
+        }
+        p::first-line {
+            color: red;
+            font-weight: bold;
+        }
+        /* p::first-letter {
+            color: blue;
+            font-size: 50px;
+            font-weight: bold;
+        } */
+        p::before {
+            content: '"';
+            color: orchid;
+            font-size: 100px;
+        }
+        p::after {
+            content: '"';
+            color: orchid;
+            font-size: 100px;
+        }
+        ul {
+            width: 40px;
+        }
+        ul li::marker {
+            color: red;
+            font-size: 50px;
+        }
+        p::selection {
+            color: orange;
+            background-color: green;
+            font-size: 100px;
+        }
+        ::selection {
+            color: green;
+            background-color: red;
+            font-size: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Geeks For Geeks</h1>
+    <h2>::first-line element</h2>
+
+    <p>
+      This is a paragraph using first-line pseudo-element to style first line of
+      the paragraph.Content in the first line turns red and becomes bold.
+    </p>
+
+    <h2>::marker element</h2>
+    <ul>
+        <li>Suman</li>
+        <li>Suraj</li>
+        <li>Pavan</li>
+        <li>Dileep Gowda</li>
+    </ul>
+  </body>
+</html>
