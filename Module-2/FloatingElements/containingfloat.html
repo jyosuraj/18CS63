@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      figure {
+        border: 2pt solid black;
+        background-color: aquamarine;
+        width: 800px;
+        padding: 10px;
+        margin: 50px;
+        overflow: auto; /* Setting the overflow property to auto solve the problem */
+      }
+      figure img {
+        width: 500px;
+        float: left;
+        margin: 5px;
+      }
+      figcaption {
+        /* width: 10px; */
+        float: left;
+      }
+      .para {
+        clear: right;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <figure>
+        <img src="/Images/nature.png" alt="" />
+        <figcaption>Nature Image</figcaption>
+      </figure>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        soluta, doloremque non exercitationem magni nostrum illum enim ullam
+        facilis eaque tempora sed distinctio hic velit aut ipsa laudantium autem
+        fugiat aliquid ad omnis eos, qui ab ratione? Molestiae nam, ipsa, nobis
+        cupiditate quasi consequatur architecto doloremque amet nesciunt
+        deleniti minus.
+      </p>
+    </article>
+  </body>
+</html>
