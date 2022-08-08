@@ -10,22 +10,35 @@
 
 <body>
     <h1>Tables in HTML5!</h1>
-    <table>
+    <table border="1">
+        <colgroup>
+            <col style="background-color: red;">
+            <col style="background-color: green;">
+        </colgroup>
+    
+
+
         <tr>
-            <th border="1">USN</th>
-            <th>Names</th>
+            <th rowspan="2">USN</th>
+            <th colspan="2">Names</th>
         </tr>
         <tr>
-            <td border="10">001</td>
-            <td>Ajay Kumar</td>
+            <th>FName</th>
+            <th>LName</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Ajay</td>
+            <td>Kumar</td>
         </tr>
         <tr>
             <td>002</td>
-            <td>Amol Y Chavan</td>
+            <td>Amol</td>
+            <td>Y</td>
         </tr>
     </table>
     <h1>Exercise Problem Sovling..</h1>
-    <table border="2">
+    <table border="1">
         <tr>
             <th>Name</th>
             <th>Phone No</th>
@@ -39,7 +52,7 @@
         </tr>
     </table>
     <h1>Nesting of Tables..</h1>
-    <table border="10">
+    <table border="2">
         <caption>
             Username & Phone no
         </caption>
@@ -50,7 +63,7 @@
         <tr>
             <td rowspan="2">Suraj HS</td>
             <td>
-                <table border="100">
+                <table border="1">
                     <caption>
                         Multiple Phone no
                     </caption>
@@ -67,7 +80,7 @@
         </tr>
         <tr></tr>
     </table>
-    <h1>Example 03..</h1>
+    <h1>Additional Table Operation</h1>
     <table border="1">
         <tfoot>
             <tr>
@@ -93,6 +106,17 @@
             </tr>
             </tr>
         </tbody>
+    </table>
+    <h1>Exercise Question</h1>
+    <table border="1">
+        <tr>
+            <td rowspan="2">ONE</td>
+            <td colspan="2">TWO</td> 
+        </tr>
+        <tr>
+            <td>THREE</td>
+            <td>FOUR</td>
+        </tr>
     </table>
 </body>
 
