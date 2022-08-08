@@ -1,5 +1,5 @@
 // through tagname
-// document.querySelector("h1").innerText="Changed Content.";
+// document.querySelector("h1").innerText="Hello World";
 
 // through id
 // document.querySelector("#para").innerText="This changed paragraph";
@@ -13,9 +13,10 @@
 
 // Event Handling.
 
-function changeBgColor()
-{
-    document.querySelectorAll("h1")[1].style.background="green";
-}
+// function changeBgColor()
+// {
+//     document.querySelectorAll("h1")[1].style.background="green";
+// }
+document.getElementById("para").innerHTML="Hai Govinda";
 
 

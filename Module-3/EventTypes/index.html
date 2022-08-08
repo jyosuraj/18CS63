@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Type</title>
+  </head>
+  <body>
+<!--     <h1>Form Events</h1>
+    <input type="text" id="demo" onblur="f1()" onfocus="f2()" />
+    <br />
+    <input type="text" id="pass" />password
+    <br />
+    <button type="submit" id="btn" onclick="verify()">Click me</button>
+
+    <p>Keyboard Event</p>
+    <button type="button" id="click" onkeydown="keyDown()" onkeyup="keyUp()" onmouseover="mouseClick()" onmouseout="mouseOut()">Click Here</button> -->
+    <input type="text" onblur="blurFunc()" id="demo"
+    onfocus="focusFunc()"
+    onchange="changeFunc()"
+    onselect="selectFunc()">enter you name
+
+    <script>
+        function blurFunc()
+        {
+            document.getElementById("demo").style.background = "red";
+        }
+        function focusFunc()
+        {
+            document.getElementById("demo").style.background = "green";
+        }
+        function changeFunc()
+        {
+            alert("Changing content");
+        }
+        function selectFunc()
+        {
+            document.getElementById("demo").style.backgroundColor = "black";
+
+        }
+/*       function f1() 
+      {
+        document.getElementById("demo").style.backgroundColor = "orange";
+      }
+      function f2() 
+      {
+        document.getElementById("demo").style.backgroundColor = "blue";
+      }
+      function verify(e)
+      {
+        var password = document.getElementById("pass").value;
+        if(password == " ")
+        {
+            alert("Enter password");
+            e.preventDefault();
+        } 
+      }
+      console.log(password); */
+/*       function keyDown()
+      {
+        document.getElementById("click").style.backgroundColor = "red";
+      }
+      function keyUp()
+      {
+        document.getElementById("click").style.backgroundColor = "blue";
+      }
+      function mouseClick()
+      {
+        document.getElementById("click").style.backgroundColor = "yellow";
+      }
+      function mouseOut()
+      {
+        document.getElementById("click").style.backgroundColor = "black";
+      } */
+    </script>
+  </body>
+</html>
