@@ -48,7 +48,7 @@
     // accessing static method.
     person::display(); */
 
-    /* // inheritance.
+/*     // inheritance.
     class Fruit
     {
         public $name, $color;
@@ -116,7 +116,7 @@
     $b->greeting();
     $b->leaving(); */
 
-    /* // Exception Handling.
+/*     // Exception Handling.
     function CheckNumber($number)
     {
         if($number > 1)
